@@ -7,7 +7,7 @@ public class InputManager : MonoBehaviour
 {
 
     private PlayerInput playerInput;
-    private PlayerInput.OnFootActions onFoot;
+    public PlayerInput.OnFootActions onFoot;
 
     private PlayerMotor motor;
     private PlayerLook look;
@@ -33,6 +33,7 @@ public class InputManager : MonoBehaviour
     void LateUpdate()
     {
         look.ProcessLook(onFoot.Look.ReadValue<Vector2>());
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void OnEnable()

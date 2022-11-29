@@ -4837,7 +4837,7 @@ GameObject:
   - component: {fileID: 953708315342245901}
   - component: {fileID: 5326323689400027108}
   - component: {fileID: 448639643943027795}
-  - component: {fileID: 1093410249192977458}
+  - component: {fileID: -7555637274905193676}
   m_Layer: 0
   m_Name: Fire bullet
   m_TagString: Untagged
@@ -4924,7 +4924,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1093410249192977458
+--- !u!114 &-7555637274905193676
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4933,8 +4933,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6888404300309161174}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d627c8ecfee96464faf08fc92915f2af, type: 3}
+  m_Script: {fileID: 11500000, guid: 8100263e3a410ab42af655fbd85909ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hit: 0
-  speed: 10
+  explosion: {fileID: 7018866319561236668, guid: 4343dc3ed78cc7c4eb146e82a419673e, type: 3}
+  speed: 30

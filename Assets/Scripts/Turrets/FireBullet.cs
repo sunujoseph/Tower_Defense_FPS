@@ -2,22 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class FireBullet : MonoBehaviour
 {
+
     private Transform target;
-    public GameObject rotato;
     public bool hit = false;
+    [SerializeField] GameObject explosion;
     public float speed = 70;
 
 
     void Start()
     {
-    
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        explosion.transform.position = target.position;
         if (target == null)
         {
             Destroy(gameObject);
@@ -28,16 +30,16 @@ public class Bullet : MonoBehaviour
 
         float distanceThisFrame = speed * Time.deltaTime;
 
-        if(dir.magnitude <= distanceThisFrame)
+        if (dir.magnitude <= distanceThisFrame)
         {
-            
+
             hitTarget();
             return;
         }
-        if (hit != true) 
-        { 
-        transform.Translate(dir.normalized * distanceThisFrame, Space.World);
-        transform.Rotate(dir.normalized * Time.deltaTime, Space.World);
+        if (hit != true)
+        {
+            transform.Translate(dir.normalized * distanceThisFrame, Space.World);
+            transform.Rotate(dir.normalized * Time.deltaTime, Space.World);
         }
 
     }
@@ -50,10 +52,9 @@ public class Bullet : MonoBehaviour
     {
         hit = true;
         gameObject.GetComponent<Renderer>().enabled = false;
-        rotato.SetActive(false);
-        Destroy(gameObject,0.6f);
-        
-        return ;
-    }
+        Instantiate(explosion);
+        Destroy(gameObject, 0.6f);
 
+        return;
+    }
 }

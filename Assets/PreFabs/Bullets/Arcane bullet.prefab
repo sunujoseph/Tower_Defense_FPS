@@ -9949,6 +9949,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d627c8ecfee96464faf08fc92915f2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotato: {fileID: 8280432697731550444}
+  hit: 0
   speed: 6
 --- !u!1 &8280432697731550444
 GameObject:
@@ -9998,6 +10000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpinSpeed: 360
+  Parent: {fileID: 6987814762475063848}
   rotato: {fileID: 5350831258489972956}
 --- !u!1 &8572112114104586695
 GameObject:

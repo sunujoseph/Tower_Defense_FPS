@@ -6,6 +6,7 @@ public class Spin : MonoBehaviour
 {
 
     public float SpinSpeed = 0;
+    public GameObject Parent;
     public Transform rotato;
     // Start is called before the first frame update
     void Start()
@@ -16,6 +17,6 @@ public class Spin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rotato.transform.Rotate(0, 0, SpinSpeed * Time.deltaTime);
+        rotato.transform.Rotate (Parent.transform.rotation.x, Parent.transform.rotation.y, SpinSpeed * Time.deltaTime);
     }
 }

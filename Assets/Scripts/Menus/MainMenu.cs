@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("PlayMenu");
         newGame = true;
     }
 
@@ -24,6 +24,11 @@ public class MainMenu : MonoBehaviour
         // to show it works without needing to build
         Debug.Log("Exiting Game...");
         Application.Quit();
+    }
+
+    public void MainGame()
+    {
+        SceneManager.LoadScene("GameScene");
     }
 }
 

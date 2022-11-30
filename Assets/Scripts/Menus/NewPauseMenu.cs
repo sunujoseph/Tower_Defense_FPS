@@ -12,11 +12,7 @@ public class NewPauseMenu : MonoBehaviour
 
     [SerializeField] GameObject pauseUI;
     [SerializeField] GameObject crosshair;
-    [SerializeField] GameObject inputManagement;
     [SerializeField] private bool isPaused;
-
-    InputManager inputManager;
-
 
     // Start is called before the first frame update
     void Awake()
@@ -25,18 +21,13 @@ public class NewPauseMenu : MonoBehaviour
        
     }
 
-    void Start()
-    {
-        inputManager.PlayerCursorIsLocked = true;
-    }
-
     // Update is called once per frame
     void Update()
     {
-        
+ 
+            
     }
-
-    private void OnEnable()
+private void OnEnable()
     {
         menu = playerControls.Menu.Escape;
         menu.Enable();
@@ -69,8 +60,6 @@ public class NewPauseMenu : MonoBehaviour
         AudioListener.pause = true;
         pauseUI.SetActive(true);
         crosshair.SetActive(false);
-
-        inputManager.PlayerCursorIsLocked = false;
     }
 
     public void DeactivateMenu()
@@ -80,8 +69,6 @@ public class NewPauseMenu : MonoBehaviour
         pauseUI.SetActive(false);
         crosshair.SetActive(true);
         isPaused = false;
-
-        inputManager.PlayerCursorIsLocked = true;
     }
 
     public void MainMenu()

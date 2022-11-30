@@ -52,6 +52,7 @@ public class FireBullet : MonoBehaviour
     {
         hit = true;
         gameObject.GetComponent<Renderer>().enabled = false;
+        gameObject.GetComponent<Collider>().enabled = false;
         Instantiate(explosion);
         Destroy(gameObject, 0.6f);
 

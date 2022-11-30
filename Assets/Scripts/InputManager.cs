@@ -20,7 +20,6 @@ public class InputManager : MonoBehaviour
     public GameObject controlMenu;
     public GameObject settingsMenu;
     public GameObject exitMenu;
-    public GameObject towerMenu;
 
 
     // Start is called before the first frame update
@@ -66,6 +65,11 @@ public class InputManager : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             //look.ProcessLook(onFoot.Look.ReadValue<Vector2>());
         }
+
+    }
+
+    void MenuFunction()
+    {
         if (pauseMenu.activeInHierarchy)
         {
             PlayerCursorIsLocked = false;
@@ -91,18 +95,12 @@ public class InputManager : MonoBehaviour
             PlayerCursorIsLocked = false;
             Cursor.visible = true;
         }
-        else if (towerMenu.activeInHierarchy)
-        {
-            PlayerCursorIsLocked = false;
-            Cursor.visible = true;
-        }
         else
         {
             PlayerCursorIsLocked = true;
         }
-
-
     }
+
 
     public void SetMouseLock(bool mlock)
     {

@@ -9,10 +9,10 @@ public class Bullet : MonoBehaviour
     public bool hit = false;
     public float speed = 70;
 
-
+    public int damage = 10; 
     void Start()
     {
-    
+        
     }
 
     // Update is called once per frame
@@ -52,8 +52,18 @@ public class Bullet : MonoBehaviour
         gameObject.GetComponent<Renderer>().enabled = false;
         rotato.SetActive(false);
         Destroy(gameObject,0.6f);
+
+        Enemy e = target.GetComponent<Enemy>(); 
         
+
+        if (e != null)
+        {
+            e.TakeDamage(damage);
+        }
+
+
         return ;
     }
 
+ 
 }

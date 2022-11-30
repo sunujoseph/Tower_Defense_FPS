@@ -5,10 +5,13 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public float speed = 5f;
+    public int health = 30;
 
     private Transform target;
 
     private int wavepointIndex = 0;
+
+
 
     private void Start()
     {
@@ -28,14 +31,37 @@ public class Enemy : MonoBehaviour
 
     void GetNextWaypoints()
     {
-        wavepointIndex++;
-        target = Waypoint.points[wavepointIndex];
+      
 
         if (wavepointIndex >= Waypoint.points.Length - 1)
         {
-            Destroy(gameObject);
+            EndPath();
             return;
         }
-       
+
+        wavepointIndex++;
+        target = Waypoint.points[wavepointIndex];
     }
+
+    void EndPath()
+    {
+        PlayerStat.health--;
+        Destroy(gameObject);
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Destroy(gameObject);
+    }
+
 }

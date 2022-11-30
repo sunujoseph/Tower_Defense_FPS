@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 98
+  controlID: 110
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -94,8 +94,8 @@ MonoBehaviour:
     y: 0
     width: 363
     height: 584
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 99
+  controlID: 100
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 100
+  controlID: 101
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,22 +317,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/PreFabs
+    - Assets/Input
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/PreFabs
+  - Assets/Input
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Sunu\Documents\GitHub\GDW3\Tower_Defense_FPS
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 10}
-    m_SelectedIDs: a0670000
-    m_LastClickedID: 26528
-    m_ExpandedIDs: 000000008e670000a067000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 16650000
+    m_LastClickedID: 25878
+    m_ExpandedIDs: 000000000465000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008e670000
+    m_ExpandedIDs: 0000000004650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -488,23 +488,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 04090100
-      m_LastClickedID: 67844
-      m_ExpandedIDs: 4080f5ff4680f5ff9a9ff5ffa09ff5ffaa9ff5ff46a0f5ffeca4f5ff6cb3f5ff84c4f5ffe4caf5ff06d0f5ffd0d2f5ff346af6ff3c6ef6ff1671f6ffa472f6ff3e75f6ff1c7af6ffd471fdffda71fdff68f8ffff74630000bea7000020b80000e2db00004cdc00008edd0000c6dd000028080100
+      m_SelectedIDs: facf0000
+      m_LastClickedID: 53242
+      m_ExpandedIDs: 8232fcffac37fcff38edfdffde0cfeffb8f2ffffd8faffff425f000008600000aa810000cc8200003aaf0000c2b00000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: TurretSlot
-        m_OriginalName: TurretSlot
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -680078
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -739,9 +739,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 9.927539, y: 1.3152771, z: -0.78570557}
+    m_Target: {x: 69.96374, y: -83.01892, z: 99.41962}
     speed: 2
-    m_Value: {x: 9.927539, y: 1.3152771, z: -0.78570557}
+    m_Value: {x: 69.96374, y: -83.01892, z: 99.41962}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -788,13 +788,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.33796462, y: 0.42695028, z: -0.17594609, w: 0.82009137}
+    m_Target: {x: -0.28309166, y: -0.28278643, z: 0.0877526, w: -0.91225344}
     speed: 2
-    m_Value: {x: 0.33796236, y: 0.4269474, z: -0.17594491, w: 0.8200859}
+    m_Value: {x: -0.28308943, y: -0.2827842, z: 0.08775191, w: -0.9122463}
   m_Size:
-    m_Target: 10.983537
+    m_Target: 83.526985
     speed: 2
-    m_Value: 10.983537
+    m_Value: 83.526985
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -812,7 +812,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: -0.28309166, y: -0.28278643, z: 0.0877526, w: -0.91225344}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 

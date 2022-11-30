@@ -9,9 +9,9 @@ public class Enemy : MonoBehaviour
     float speed;
 
     public float startHealth = 30;
-    float health; 
+    float health;
 
-
+    public Transform player; 
     private Transform target;
 
     private int wavepointIndex = 0;
@@ -25,10 +25,14 @@ public class Enemy : MonoBehaviour
         target = Waypoint.points[0];
         speed = ogSpeed;
         health = startHealth;
+
+        player = GetComponent<Transform>();
     }
     private void Update()
     {
         Vector3 dir = target.position - transform.position;
+        Vector3 lookAtDir = player.position - transform.position;
+
 
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
 
@@ -36,6 +40,8 @@ public class Enemy : MonoBehaviour
         {
             GetNextWaypoints();
         }
+
+        transform.LookAt(lookAtDir);
     }
 
     void GetNextWaypoints()

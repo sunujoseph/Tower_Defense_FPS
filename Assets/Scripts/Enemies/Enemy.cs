@@ -1,21 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
-    public float speed = 5f;
-    public int health = 30;
+    public float ogSpeed = 5f;
+    float speed;
+
+    public float startHealth = 30;
+    float health; 
+
 
     private Transform target;
 
     private int wavepointIndex = 0;
+
+    public Image healthBar; 
 
 
 
     private void Start()
     {
         target = Waypoint.points[0];
+        speed = ogSpeed;
+        health = startHealth;
     }
     private void Update()
     {
@@ -46,12 +55,15 @@ public class Enemy : MonoBehaviour
     void EndPath()
     {
         PlayerStat.health--;
+        WaveSpawner.enemiesAlive--; 
         Destroy(gameObject);
     }
 
     public void TakeDamage(int damage)
     {
         health -= damage;
+
+        healthBar.fillAmount = health/startHealth;
         
         if (health <= 0)
         {
@@ -61,6 +73,8 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+        WaveSpawner.enemiesAlive--;
+
         Destroy(gameObject);
     }
 

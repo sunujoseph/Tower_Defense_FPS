@@ -14,6 +14,15 @@ public class InputManager : MonoBehaviour
 
     public bool PlayerCursorIsLocked;
 
+    //for menus
+    public GameObject pauseMenu;
+    public GameObject optionMenu;
+    public GameObject controlMenu;
+    public GameObject settingsMenu;
+    public GameObject exitMenu;
+    public GameObject towerMenu;
+
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -57,6 +66,42 @@ public class InputManager : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             //look.ProcessLook(onFoot.Look.ReadValue<Vector2>());
         }
+        if (pauseMenu.activeInHierarchy)
+        {
+            PlayerCursorIsLocked = false;
+            Cursor.visible = true;
+        }
+        else if (optionMenu.activeInHierarchy)
+        {
+            PlayerCursorIsLocked = false;
+            Cursor.visible = true;
+        }
+        else if (controlMenu.activeInHierarchy)
+        {
+            PlayerCursorIsLocked = false;
+            Cursor.visible = true;
+        }
+        else if (settingsMenu.activeInHierarchy)
+        {
+            PlayerCursorIsLocked = false;
+            Cursor.visible = true;
+        }
+        else if (exitMenu.activeInHierarchy)
+        {
+            PlayerCursorIsLocked = false;
+            Cursor.visible = true;
+        }
+        else if (towerMenu.activeInHierarchy)
+        {
+            PlayerCursorIsLocked = false;
+            Cursor.visible = true;
+        }
+        else
+        {
+            PlayerCursorIsLocked = true;
+        }
+
+
     }
 
     public void SetMouseLock(bool mlock)

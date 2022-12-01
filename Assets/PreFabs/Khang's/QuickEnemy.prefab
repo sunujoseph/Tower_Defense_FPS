@@ -112,8 +112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0fcf8a1c9e387f4c9f2a4e98dba7e6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ogSpeed: 20
-  startHealth: 20
+  ogSpeed: 5
+  startHealth: 30
   player: {fileID: 8648963337692970504, guid: 125f53a7d86678f458c014c4783a0d8e, type: 3}
   healthBar: {fileID: 1093584987383250003}
 --- !u!1 &5382326621634093361

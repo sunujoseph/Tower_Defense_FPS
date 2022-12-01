@@ -348,7 +348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63887c59b6b76994090dde701a4e329c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 100
+  range: 15
   bulletPrefab: {fileID: 6888404300309161174, guid: 2498f9280b57c6440899af05b25fc989, type: 3}
   fireRate: 0.3
   RotatePoint: {fileID: 2471345002060550721}
@@ -4458,9 +4458,9 @@ ParticleSystem:
       properties: 0
       emitProbability: 1
   LightsModule:
-    enabled: 1
-    ratio: 1
-    light: {fileID: 6580203553565277982, guid: 3dd042f6e99799245bcdbda03829db00, type: 3}
+    enabled: 0
+    ratio: 0
+    light: {fileID: 0}
     randomDistribution: 1
     color: 1
     range: 1

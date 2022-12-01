@@ -8137,6 +8137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80d049881959cc34a8ba225d3baba400, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usingTurretNode: 0
   PlayerCursorIsLocked: 0
   pauseMenu: {fileID: 1469165876}
   optionMenu: {fileID: 1695489292}
@@ -18381,6 +18382,7 @@ MonoBehaviour:
     rate: 0.3
   spawnPoint: {fileID: 866009795}
   timeBetweenWaves: 10
+  startPeriod: 50
   waveCountdownText: {fileID: 1273788602}
 --- !u!4 &724044932
 Transform:
@@ -21195,6 +21197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b269d31480448f43ba57a5fbac7dfda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputManagerPlayer: {fileID: 312784734}
   pauseUI: {fileID: 1469165876}
   crosshair: {fileID: 666489003}
   isPaused: 0

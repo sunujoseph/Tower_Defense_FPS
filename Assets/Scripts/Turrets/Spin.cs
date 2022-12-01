@@ -17,6 +17,6 @@ public class Spin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rotato.transform.Rotate (Parent.transform.rotation.x, Parent.transform.rotation.y, SpinSpeed * Time.deltaTime);
+        rotato.transform.Rotate (Parent.transform.rotation.x, 0, SpinSpeed * Time.deltaTime);
     }
 }

@@ -9,7 +9,7 @@ public class FireBullet : MonoBehaviour
     public bool hit = false;
     [SerializeField] GameObject explosion;
     public float speed = 70;
-
+    
 
     void Start()
     {
@@ -51,6 +51,7 @@ public class FireBullet : MonoBehaviour
     void hitTarget()
     {
         hit = true;
+        
         gameObject.GetComponent<Renderer>().enabled = false;
         gameObject.GetComponent<Collider>().enabled = false;
         Instantiate(explosion);

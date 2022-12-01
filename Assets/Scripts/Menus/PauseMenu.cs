@@ -41,7 +41,7 @@ public partial class @PauseMenu : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""180a3078-db88-402c-9f07-91e6c0374d75"",
-                    ""path"": ""<Keyboard>/#(R)"",
+                    ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

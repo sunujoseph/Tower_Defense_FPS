@@ -18,13 +18,25 @@ public class NewPauseMenu : MonoBehaviour
     void Awake()
     {
         playerControls = new PauseMenu();
-       
+
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
- 
+        if (pauseUI.activeInHierarchy)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            Debug.Log("WORKONG");
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = false;
+            Debug.Log("WAHAWIDHWAOI");
+        }
             
     }
 private void OnEnable()

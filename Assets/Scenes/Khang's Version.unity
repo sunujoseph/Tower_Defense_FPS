@@ -18649,6 +18649,7 @@ MonoBehaviour:
     rate: 0.3
   spawnPoint: {fileID: 866009795}
   timeBetweenWaves: 10
+  startPeriod: 50
   waveCountdownText: {fileID: 1273788602}
 --- !u!4 &724044932
 Transform:

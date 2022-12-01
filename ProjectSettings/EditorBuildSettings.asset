@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PlayMenu.unity
     guid: c6bf08c343f397e419f694b320febb6c
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 0e1541e1ddcc9a24c930b76734080e3f
+  - enabled: 1
+    path: Assets/Scenes/Victory.unity
+    guid: 753770659299905428c2c81a9973d7aa
+  - enabled: 1
+    path: Assets/Scenes/Sunu's Map.unity
+    guid: 229bcdb65885ca7498f369ee8ed944cf
   m_configObjects: {}

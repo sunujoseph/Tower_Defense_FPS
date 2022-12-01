@@ -365,6 +365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7479fa132ffdb2a42971595072f6372e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ogSpeed: 5
+  ogSpeed: 20
   startHealth: 30
+  player: {fileID: 0}
   healthBar: {fileID: 1825358143292224008}

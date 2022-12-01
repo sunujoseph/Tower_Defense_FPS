@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class WaveSpawner : MonoBehaviour
@@ -58,7 +59,7 @@ public class WaveSpawner : MonoBehaviour
 
 		if (waveIndex == waves.Length)
 		{
-			Debug.Log("Level Won");
+			SceneManager.LoadScene(4);
 			this.enabled = false;
 		}
 

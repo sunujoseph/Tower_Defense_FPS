@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    private bool gameEnded = false; 
+    private bool gameEnded = false;
+
+    public GameObject gameOver;
 
     private void Update()
     {
@@ -12,15 +15,18 @@ public class GameManager : MonoBehaviour
         {
             return;
         }
+
+
         if (PlayerStat.health <= 0)
         {
             EndGame();
         }
+
     }
 
-    void EndGame()
+    public void EndGame()
     {
         gameEnded = true;
-        Debug.Log("Game Over");
+        gameOver.SetActive(true);
     }
 }

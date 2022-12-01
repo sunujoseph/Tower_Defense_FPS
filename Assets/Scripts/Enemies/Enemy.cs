@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     public float startHealth = 30;
     float health;
 
-    public Transform player; 
+    public GameObject player; 
     private Transform target;
 
     private int wavepointIndex = 0;
@@ -26,13 +26,15 @@ public class Enemy : MonoBehaviour
         speed = ogSpeed;
         health = startHealth;
 
-        player = GetComponent<Transform>();
+        player = GameObject.FindWithTag("Player");
+
+
     }
     private void Update()
     {
         Vector3 dir = target.position - transform.position;
-        Vector3 lookAtDir = player.position - transform.position;
-
+        Vector3 lookAtDir = player.transform.position - transform.position;
+         Quaternion.LookRotation((lookAtDir).normalized);
 
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
 
@@ -41,7 +43,7 @@ public class Enemy : MonoBehaviour
             GetNextWaypoints();
         }
 
-        transform.LookAt(lookAtDir);
+        
     }
 
     void GetNextWaypoints()

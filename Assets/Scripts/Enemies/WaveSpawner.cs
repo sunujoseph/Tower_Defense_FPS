@@ -16,13 +16,21 @@ public class WaveSpawner : MonoBehaviour
 	public float timeBetweenWaves = 30f;
 	private float countdown = 2f;
 
+	public float startPeriod = 60.0f; 
+
 	public Text waveCountdownText;
+
 
 	
 
 	private int waveIndex = 0;
 
-	void Update()
+    private void Start()
+    {
+		countdown = startPeriod;
+    }
+
+    void Update()
 	{
 		if (enemiesAlive > 0)
         {

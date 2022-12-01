@@ -6,8 +6,14 @@ public class TurretNode : Interactable
 {
     //[SerializeField] public GameObject turretObjectPrefab;
 
-    MeshRenderer nodeMesh;
-    BoxCollider nodeCollider;
+    [SerializeField]
+    TurretNodeManager turretNodeManager;
+
+    [SerializeField]
+    int turretNodeNumber;
+
+    public MeshRenderer nodeMesh;
+    public BoxCollider nodeCollider;
 
     [SerializeField]
     public GameObject turretUI;
@@ -37,10 +43,14 @@ public class TurretNode : Interactable
     {
         // set for list numbers 0 to ... n
         slotTurretNumber = slotNum;
+
+        //Debug.Log("Interacted with " + slotNum);
     }
 
     public void UseTurretButton()
     {
+        //Debug.Log("Using Button");
+
         turretUI.SetActive(!turretUI.activeSelf);
         inputManagerPlayer.SetMouseLock(true);
 
@@ -69,6 +79,8 @@ public class TurretNode : Interactable
         //newTurretGameObject.transform.parent = transform;
         //GameObject prefabGameObject = Instantiate(turretObjectPrefab, this.gameObject.transform.position, Quaternion.identity, transform);
         //prefabGameObject.name = "Turret Prefab";
+
+        turretNodeManager.SetTurretNodeNumber(turretNodeNumber);
 
         turretUI.SetActive(!turretUI.activeSelf);
 

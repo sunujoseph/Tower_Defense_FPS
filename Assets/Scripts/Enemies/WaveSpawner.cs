@@ -10,7 +10,6 @@ public class WaveSpawner : MonoBehaviour
 
 	public Wave[] waves;
 
-	public GameObject enemyPF;
 	public Transform spawnPoint;
 
 	public float timeBetweenWaves = 30f;
@@ -54,14 +53,15 @@ public class WaveSpawner : MonoBehaviour
 			yield return new WaitForSeconds(1f / wave.rate);
 		}
 
+
+		waveIndex++;
+
 		if (waveIndex == waves.Length)
-        {
+		{
 			Debug.Log("Level Won");
 			this.enabled = false;
-        }
+		}
 
-		waveIndex ++;
-		
 	}
 
 	void SpawnEnemy(GameObject enemy)

@@ -66,6 +66,7 @@ public class TurretNodeManager : MonoBehaviour
 
         turretUI.SetActive(!turretUI.activeSelf);
         inputManagerPlayer.SetMouseLock(true);
+        inputManagerPlayer.SetUsingTurretNode(true);
 
 
 

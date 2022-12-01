@@ -10,6 +10,10 @@ public class NewPauseMenu : MonoBehaviour
     private PauseMenu playerControls;
     private InputAction menu;
 
+    [SerializeField]
+    public InputManager inputManagerPlayer;
+
+
     [SerializeField] GameObject pauseUI;
     [SerializeField] GameObject crosshair;
     [SerializeField] private bool isPaused;
@@ -19,26 +23,19 @@ public class NewPauseMenu : MonoBehaviour
     {
         playerControls = new PauseMenu();
 
-        Cursor.visible = false;
+        //Cursor.visible = false;
     }
 
     // Update is called once per frame
     void LateUpdate()
     {
-        if (pauseUI.activeInHierarchy)
+        if (inputManagerPlayer.usingTurretNode == false)
         {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            Debug.Log("WORKONG");
+            inputManagerPlayer.MenuFunction();
         }
-        else
-        {
-            Cursor.lockState = CursorLockMode.Confined;
-            Cursor.visible = false;
-            Debug.Log("WAHAWIDHWAOI");
-        }
-            
+               
     }
+
 private void OnEnable()
     {
         menu = playerControls.Menu.Escape;

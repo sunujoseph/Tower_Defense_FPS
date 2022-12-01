@@ -85,6 +85,7 @@ public class TurretNode : Interactable
         turretUI.SetActive(!turretUI.activeSelf);
 
         inputManagerPlayer.SetMouseLock(false);
+        inputManagerPlayer.SetUsingTurretNode(true);
 
         //Cursor.lockState = CursorLockMode.None;
 

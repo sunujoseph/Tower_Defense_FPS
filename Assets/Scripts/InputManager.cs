@@ -12,6 +12,8 @@ public class InputManager : MonoBehaviour
     private PlayerMotor motor;
     private PlayerLook look;
 
+    public bool usingTurretNode;
+
     public bool PlayerCursorIsLocked;
 
     //for menus
@@ -32,6 +34,7 @@ public class InputManager : MonoBehaviour
         look = GetComponent<PlayerLook>();
 
         PlayerCursorIsLocked = true;
+        usingTurretNode = false;
 
         onFoot.Jump.performed += ctx => motor.Jump();
     }
@@ -68,7 +71,7 @@ public class InputManager : MonoBehaviour
 
     }
 
-    void MenuFunction()
+    public void MenuFunction()
     {
         if (pauseMenu.activeInHierarchy)
         {
@@ -99,6 +102,11 @@ public class InputManager : MonoBehaviour
         {
             PlayerCursorIsLocked = true;
         }
+    }
+
+    public void SetUsingTurretNode(bool usingNode)
+    {
+        usingTurretNode = usingNode;
     }
 
 

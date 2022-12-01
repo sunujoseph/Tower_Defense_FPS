@@ -28,7 +28,7 @@ public class MainMenu : MonoBehaviour
 
     public void MainGame()
     {
-        SceneManager.LoadScene("Sunu's Map");
+        SceneManager.LoadScene("Khang's Version");
     }
 }
 

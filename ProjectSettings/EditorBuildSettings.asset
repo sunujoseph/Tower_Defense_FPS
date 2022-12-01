@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: f6b3996e8f466254b8728a999ddc6409
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GameScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
@@ -23,7 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Victory.unity
     guid: 753770659299905428c2c81a9973d7aa
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Sunu's Map.unity
     guid: 229bcdb65885ca7498f369ee8ed944cf
+  - enabled: 1
+    path: Assets/Scenes/Khang's Version.unity
+    guid: c4209f64f57cee84a84f62ff5f2c83d3
   m_configObjects: {}

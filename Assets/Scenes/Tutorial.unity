@@ -1189,6 +1189,66 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e8e5cdaa9a82634e8b5d3ae70ec6349, type: 3}
+--- !u!1 &243225415
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 243225418}
+  - component: {fileID: 243225417}
+  - component: {fileID: 243225416}
+  m_Layer: 0
+  m_Name: MenuController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &243225416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243225415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b0a70a355d27ec45a11dd143a1ffe6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &243225417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243225415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b269d31480448f43ba57a5fbac7dfda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseUI: {fileID: 1722809836}
+  crosshair: {fileID: 2008621204}
+  isPaused: 0
+--- !u!4 &243225418
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243225415}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 643.6815, y: 283.16232, z: -2.7417207}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &247238100
 GameObject:
   m_ObjectHideFlags: 0
@@ -3510,7 +3570,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 367, y: 145}
+  m_AnchoredPosition: {x: 486, y: 202}
   m_SizeDelta: {x: 64.3088, y: 57.2144}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &816988065
@@ -3581,7 +3641,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 817752852}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -734, y: 296, z: -75.40014}
+  m_LocalPosition: {x: -930, y: 296, z: -75.40014}
   m_LocalScale: {x: 1.8980668, y: 1.8980668, z: 1.8980668}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4695,7 +4755,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -199.4, y: 149}
+  m_AnchoredPosition: {x: -325, y: 228}
   m_SizeDelta: {x: 329.46307, y: 32.968414}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &993519585
@@ -5326,7 +5386,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 243225417}
         m_TargetAssemblyTypeName: NewPauseMenu, Assembly-CSharp
         m_MethodName: DeactivateMenu
         m_Mode: 1
@@ -5758,9 +5818,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: GoToMainMenu
+      - m_Target: {fileID: 243225416}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5926,7 +5986,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1567835673}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -733.99994, y: 216.50491, z: -75.40014}
+  m_LocalPosition: {x: -930, y: 216.50491, z: -75.40014}
   m_LocalScale: {x: 1.8980668, y: 1.8980668, z: 1.8980668}
   m_ConstrainProportionsScale: 0
   m_Children:

@@ -13,7 +13,6 @@ public class FireTurret : MonoBehaviour
     [SerializeField] GameObject bulletPrefab;
     public float fireRate = 1;
     private float firecountdown = 0;
-
     [SerializeField] Transform RotatePoint;
 
     public Transform firepoint;

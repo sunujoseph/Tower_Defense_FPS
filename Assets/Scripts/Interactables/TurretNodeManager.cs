@@ -82,6 +82,8 @@ public class TurretNodeManager : MonoBehaviour
 
         turretNodes[TurretNodeNumber].nodeMesh.enabled = false;
         turretNodes[TurretNodeNumber].nodeCollider.enabled = false;
+
+        inputManagerPlayer.SetUsingTurretNode(false);
     }
 
 }

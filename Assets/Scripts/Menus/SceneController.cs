@@ -13,5 +13,11 @@ public class SceneController : MonoBehaviour
     public void CloseGame()
     {
         Application.Quit();
+        Debug.Log("Closing Game..."); // to show functionality in editor
+    }
+
+    public void PlayGame()
+    {
+        SceneManager.LoadScene("Khang's Version");
     }
 }

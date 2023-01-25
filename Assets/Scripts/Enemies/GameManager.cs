@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     private bool gameEnded = false;
 
-    public GameObject gameOver;
+    public InputManager inputManager;
 
     private void Update()
     {
@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour
     public void EndGame()
     {
         gameEnded = true;
-        gameOver.SetActive(true);
+        SceneManager.LoadScene("GameOver");
+        inputManager.PlayerCursorIsLocked = false;
+        
     }
 }

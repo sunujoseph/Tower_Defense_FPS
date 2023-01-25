@@ -1,11 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
     public bool newGame;
+
+    [SerializeField] GameObject controlsMenu;
+    [SerializeField] GameObject settingsMenu;
+    [SerializeField] GameObject optionsText;
+
+    private void Start()
+    {
+        controlsMenu.SetActive(false);
+    }
 
     public void PlayGame()
     {
@@ -29,6 +40,31 @@ public class MainMenu : MonoBehaviour
     public void MainGame()
     {
         SceneManager.LoadScene("Khang's Version");
+    }
+
+    //essentially so that a seperate canvas will pop up on a specific button click -> for cooler UI
+    public void ActiveControls() // prob an easier way to do this but good enough for now
+    {
+        controlsMenu.SetActive(true);
+        optionsText.SetActive(false);
+    }
+
+    public void DeactiveControls()
+    {
+        controlsMenu.SetActive(false);
+        optionsText.SetActive(true);
+    }
+
+    public void ActiveSettings()
+    {
+        settingsMenu.SetActive(true);
+        optionsText.SetActive(false);
+    }
+
+    public void DeactiveSettings()
+    {
+        settingsMenu.SetActive(false);
+        optionsText.SetActive(true);
     }
 }
 

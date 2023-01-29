@@ -20,4 +20,14 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("Khang's Version");
     }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene("PlayMenu");
+    }
+
+    public void PlayTutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
 }

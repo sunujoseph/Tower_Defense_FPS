@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 638249545}
   - component: {fileID: 638249544}
   m_Layer: 5
-  m_Name: Image
+  m_Name: BGColour
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -707,10 +707,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.39404592, g: 0.4876624, b: 0.5188679, a: 1}
-    m_HighlightedColor: {r: 0.26886794, g: 0.33608493, b: 0.3584906, a: 1}
-    m_PressedColor: {r: 0.16006587, g: 0.27186298, b: 0.31132078, a: 1}
-    m_SelectedColor: {r: 0, g: 0.8235294, b: 0.827451, a: 1}
+    m_NormalColor: {r: 0.0627451, g: 0.6745098, b: 0.5188679, a: 1}
+    m_HighlightedColor: {r: 0.03137255, g: 0.3764706, b: 0.28627452, a: 1}
+    m_PressedColor: {r: 0.023529412, g: 0.20784314, b: 0.15686275, a: 1}
+    m_SelectedColor: {r: 0.0627451, g: 0.6745098, b: 0.5176471, a: 1}
     m_DisabledColor: {r: 0.39215687, g: 0.4862745, b: 0.5176471, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1333,7 +1333,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f01dc9d6ab6bc5841b24c784d63cf2b8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f969ebd05159ca94f892f7a52bab024a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1388,7 +1388,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 590.0002, y: 0}
+  m_AnchoredPosition: {x: 575, y: 0}
   m_SizeDelta: {x: 1162.7, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1672826418
@@ -1619,7 +1619,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7597a784b3c672b49925f56ad7da4d5d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6d11477403ee334488ce57a031a730bb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

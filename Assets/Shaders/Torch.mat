@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Node
+  m_Name: Torch
   m_Shader: {fileID: 4800000, guid: 7723496b840e8b841bb8758175a541a7, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -73,14 +73,12 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Shininess: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.48235294, g: 0.46666667, b: 0.46666667, a: 1}
+    - _Color: {r: 0.5660378, g: 0.34867364, b: 0.23762906, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SpecColor: {r: 0.48235294, g: 0.46666667, b: 0.46666667, a: 1}
   m_BuildTextureStacks: []

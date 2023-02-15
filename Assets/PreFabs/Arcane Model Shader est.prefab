@@ -53,7 +53,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5822656446088813305, guid: 9617f51c4a1567046b49cdc3dcca5d66, type: 3}
       propertyPath: m_Name
-      value: Arcane Model 1
+      value: Arcane Model Shader est
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7286542729742867698, guid: 9617f51c4a1567046b49cdc3dcca5d66, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9617f51c4a1567046b49cdc3dcca5d66, type: 3}

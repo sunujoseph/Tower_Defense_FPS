@@ -4,7 +4,8 @@ Shader "Custom/Specular"
     {
         _Color("Color", Color) = (1.0,1.0,1.0)
        _SpecColor("Color", Color) = (1.0,1.0,1.0)
-       _Shininess("Shininess", Float) = 1
+       _Shininess("Shininess", Range(0.5, 8)) = 1.0
+
     }
         SubShader
     {

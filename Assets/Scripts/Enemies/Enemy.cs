@@ -33,8 +33,8 @@ public class Enemy : MonoBehaviour
     private void Update()
     {
         Vector3 dir = target.position - transform.position;
-        Vector3 lookAtDir = player.transform.position - transform.position;
-         Quaternion.LookRotation((lookAtDir).normalized);
+        //Vector3 lookAtDir = player.transform.position - transform.position;
+         //Quaternion.LookRotation((lookAtDir).normalized);
 
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
 

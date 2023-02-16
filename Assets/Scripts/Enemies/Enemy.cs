@@ -71,8 +71,6 @@ public class Enemy : MonoBehaviour
     {
         health -= damage;
 
-        healthBar.fillAmount = health/startHealth;
-        
         if (health <= 0)
         {
             Die();
@@ -81,7 +79,6 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-        WaveSpawner.enemiesAlive--;
 
         Destroy(gameObject);
     }

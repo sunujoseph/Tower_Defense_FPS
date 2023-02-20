@@ -33,4 +33,10 @@ public class ResourceCollect : MonoBehaviour
             Col.gameObject.SetActive(false);
         }
     }
+
+    public void decreaseResource(int woodCost, int goldCost)
+    {
+        wood -= woodCost;
+        gold -= goldCost;
+    }
 }

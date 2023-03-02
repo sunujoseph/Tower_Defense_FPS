@@ -9,7 +9,7 @@ public class FireBullet : MonoBehaviour
     public bool hit = false;
     [SerializeField] GameObject explosion;
     public float speed = 70;
-    
+    public int damage = 20;
 
     void Start()
     {
@@ -50,13 +50,21 @@ public class FireBullet : MonoBehaviour
 
     void hitTarget()
     {
-        hit = true;
-        
+        Enemy e = target.GetComponent<Enemy>();
+
+
+        if (e != null)
+        {
+            e.TakeDamage(damage);
+        }
+        if (hit != true)
+        {
         gameObject.GetComponent<Renderer>().enabled = false;
         gameObject.GetComponent<Collider>().enabled = false;
         Instantiate(explosion);
         Destroy(gameObject, 0.6f);
-
+            hit = true;
+    }
         return;
     }
 }

@@ -471,6 +471,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   useEvents: 1
   promptMessage: Use Tower Node
+  turretNodeManager: {fileID: 0}
+  turretNodeNumber: 0
+  nodeMesh: {fileID: 0}
+  nodeCollider: {fileID: 0}
   turretUI: {fileID: 881503491720973975}
   inputManagerPlayer: {fileID: 1726395870}
   turretObjects:
@@ -3623,6 +3627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b269d31480448f43ba57a5fbac7dfda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputManagerPlayer: {fileID: 0}
   pauseUI: {fileID: 16316955}
   crosshair: {fileID: 1450253208}
   isPaused: 0
@@ -6132,6 +6137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80d049881959cc34a8ba225d3baba400, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usingTurretNode: 0
   PlayerCursorIsLocked: 0
   pauseMenu: {fileID: 16316955}
   optionMenu: {fileID: 376527946}
@@ -7923,6 +7929,63 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!1001 &1362315940849476493
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3830855043367333171, guid: 84058f497e6a06c449e32667929664ec, type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 3830855043367333171, guid: 84058f497e6a06c449e32667929664ec, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.965633
+      objectReference: {fileID: 0}
+    - target: {fileID: 3830855043367333171, guid: 84058f497e6a06c449e32667929664ec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.8061266
+      objectReference: {fileID: 0}
+    - target: {fileID: 3830855043367333171, guid: 84058f497e6a06c449e32667929664ec, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.2977523
+      objectReference: {fileID: 0}
+    - target: {fileID: 3830855043367333171, guid: 84058f497e6a06c449e32667929664ec, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3830855043367333171, guid: 84058f497e6a06c449e32667929664ec, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3830855043367333171, guid: 84058f497e6a06c449e32667929664ec, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3830855043367333171, guid: 84058f497e6a06c449e32667929664ec, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3830855043367333171, guid: 84058f497e6a06c449e32667929664ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3830855043367333171, guid: 84058f497e6a06c449e32667929664ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3830855043367333171, guid: 84058f497e6a06c449e32667929664ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002121692843369317, guid: 84058f497e6a06c449e32667929664ec, type: 3}
+      propertyPath: m_Name
+      value: Esplode
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 84058f497e6a06c449e32667929664ec, type: 3}
 --- !u!1 &5101674452588762640
 GameObject:
   m_ObjectHideFlags: 0

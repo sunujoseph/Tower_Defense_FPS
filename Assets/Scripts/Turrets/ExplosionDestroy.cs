@@ -6,7 +6,7 @@ using UnityEngine.Audio;
 public class ExplosionDestroy : MonoBehaviour
 {
     // Start is called before the first frame update
-
+    public int damage = 10;
     void Start()
     {
         

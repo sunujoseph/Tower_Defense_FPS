@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ArcaneTex
-  m_Shader: {fileID: 4800000, guid: 4763b7a4b04d93e42953fea1fcf40e4f, type: 3}
+  m_Name: BasicTurretMiddle
+  m_Shader: {fileID: 4800000, guid: f532910334ec04044b543eed86d13b68, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -56,14 +56,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _myBump:
-        m_Texture: {fileID: 2800000, guid: 4935b2e737152ba4e9e3f83feb1d80fa, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _myDiffuse:
-        m_Texture: {fileID: 2800000, guid: cc20e2e541805544fa91e3a49e6900eb, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _BumpScale: 1
@@ -82,9 +74,8 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - _mySlider: 7.55
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Colour: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
+    - _Colour: {r: 0.5176471, g: 0.5176471, b: 0.5176471, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

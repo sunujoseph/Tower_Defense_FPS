@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 731273e0077c4af4586366fd901d186c, type: 2}
+  - {fileID: 2100000, guid: 92ab4d75f3d1b274eaf772e2547ab846, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5001,7 +5001,7 @@ Light:
     m_UseCullingMatrixOverride: 0
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
-  m_Flare: {fileID: 0}
+  m_Flare: {fileID: 12100000, guid: 978de27497e3e8647ac3ff1623aa84c6, type: 2}
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2

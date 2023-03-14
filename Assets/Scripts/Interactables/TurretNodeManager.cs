@@ -140,4 +140,20 @@ public class TurretNodeManager : MonoBehaviour
         
     }
 
+    public void UseTurretCloseButton()
+    {
+
+        //Close menu 
+
+        turretUI.SetActive(!turretUI.activeSelf);
+        inputManagerPlayer.SetMouseLock(true);
+        inputManagerPlayer.SetUsingTurretNode(true);
+
+        inputManagerPlayer.SetUsingTurretNode(false);
+
+        playerCanBuild = false;
+        
+
+    }
+
 }

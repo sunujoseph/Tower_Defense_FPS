@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sand
+  m_Name: Gravel
   m_Shader: {fileID: 4800000, guid: 4763b7a4b04d93e42953fea1fcf40e4f, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -57,11 +57,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _myBump:
-        m_Texture: {fileID: 2800000, guid: e3e8df77be8feb14e80283ce85c2a4c0, type: 3}
+        m_Texture: {fileID: 2800000, guid: 5398e0269289f1d4fa39fc1b842afef5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _myDiffuse:
-        m_Texture: {fileID: 2800000, guid: 1919194369b24c849b7c66956e6ae8b8, type: 3}
+        m_Texture: {fileID: 2800000, guid: 23353c6a574eacb4183d4c78f9cb1488, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -82,9 +82,9 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - _mySlider: 10
+    - _mySlider: 4.73
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Colour: {r: 0.2984198, g: 0.2544945, b: 0.4056604, a: 1}
+    - _Colour: {r: 0.7231883, g: 0.735849, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

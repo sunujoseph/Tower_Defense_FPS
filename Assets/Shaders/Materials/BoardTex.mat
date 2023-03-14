@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sand
+  m_Name: BoardTex
   m_Shader: {fileID: 4800000, guid: 4763b7a4b04d93e42953fea1fcf40e4f, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -85,6 +85,6 @@ Material:
     - _mySlider: 10
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Colour: {r: 0.2984198, g: 0.2544945, b: 0.4056604, a: 1}
+    - _Colour: {r: 0.5849056, g: 0.30191562, b: 0.1517444, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

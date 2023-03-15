@@ -44,6 +44,7 @@ public class WaveSpawner2 : MonoBehaviour
 
    public Text waveCountdownText;
 
+    public GameManager gameManager; 
 
 
     private SpawnState state = SpawnState.COUNTING;
@@ -66,6 +67,12 @@ public class WaveSpawner2 : MonoBehaviour
                 return;
             }
         }
+
+      
+
+
+
+
         if (countdown <= 0f)
         {
             if (state != SpawnState.SPAWNING)
@@ -128,7 +135,7 @@ public class WaveSpawner2 : MonoBehaviour
         if (nextWave + 1 > waves.Length - 1)
         {
             nextWave = 0;
-            Debug.Log("Completed all waves");
+            gameManager.WinGame();
         }
         else
         {
@@ -149,6 +156,8 @@ public class WaveSpawner2 : MonoBehaviour
         }
         return true;
     }
+
+
 }
 
 

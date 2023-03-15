@@ -57,11 +57,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _myBump:
-        m_Texture: {fileID: 2800000, guid: 5398e0269289f1d4fa39fc1b842afef5, type: 3}
+        m_Texture: {fileID: 2800000, guid: 73f75197a00a4924286463cf76e140bb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _myDiffuse:
-        m_Texture: {fileID: 2800000, guid: 23353c6a574eacb4183d4c78f9cb1488, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7e16b43827d188543a5475dbb5475b3c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -85,6 +85,6 @@ Material:
     - _mySlider: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Colour: {r: 0.8207597, g: 1, b: 0.13679248, a: 1}
+    - _Colour: {r: 0.5943396, g: 0.3928111, b: 0.21026166, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

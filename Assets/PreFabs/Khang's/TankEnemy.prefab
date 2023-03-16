@@ -113,7 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ogSpeed: 10
   rotateSpeed: 10
-  startHealth: 70
+  startHealth: 100
   player: {fileID: 8648963337692970504, guid: 125f53a7d86678f458c014c4783a0d8e, type: 3}
   healthBar: {fileID: 0}
 --- !u!1001 &2974770019846973336

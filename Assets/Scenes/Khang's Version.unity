@@ -14974,11 +14974,11 @@ MonoBehaviour:
   waves:
   - name: Wave1
     enemies:
-    - enemyTransform: {fileID: 8677164835394254459, guid: 17c70b4b6e85c3941b61a6833aa0c4c6, type: 3}
-      count: 2
+    - enemyTransform: {fileID: 1392287740087940981, guid: 98551259d21b896429bc76b2af64fd2e, type: 3}
+      count: 10
       rate: 1
   spawnPoint: {fileID: 1802028899}
-  startPeriod: 10
+  startPeriod: 20
   timeBetweenWaves: 5
   waveCountdownText: {fileID: 1273788602}
   gameManager: {fileID: 724044933}

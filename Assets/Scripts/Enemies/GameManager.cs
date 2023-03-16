@@ -31,4 +31,11 @@ public class GameManager : MonoBehaviour
         inputManager.PlayerCursorIsLocked = false;
         
     }
+
+    public void WinGame()
+    {
+        gameEnded = true;
+        SceneManager.LoadScene("Victory");
+        inputManager.PlayerCursorIsLocked = false;
+    }
 }

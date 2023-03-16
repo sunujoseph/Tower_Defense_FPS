@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Enemy : MonoBehaviour
 {
     public float ogSpeed = 5f;
+    public float rotateSpeed= 10f;
     float speed;
 
     public float startHealth = 30;
@@ -16,9 +17,9 @@ public class Enemy : MonoBehaviour
 
     private int wavepointIndex = 0;
 
-    public Image healthBar; 
+    public Image healthBar;
 
-
+    Quaternion enemyRotation;
 
     private void Start()
     {
@@ -33,8 +34,8 @@ public class Enemy : MonoBehaviour
     private void Update()
     {
         Vector3 dir = target.position - transform.position;
-        //Vector3 lookAtDir = player.transform.position - transform.position;
-         //Quaternion.LookRotation((lookAtDir).normalized);
+      
+       
 
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
 
@@ -43,12 +44,15 @@ public class Enemy : MonoBehaviour
             GetNextWaypoints();
         }
 
-        
+        Vector3 lookDir = Waypoint.points[wavepointIndex].position - transform.position ;
+         transform.rotation = Quaternion.LookRotation(lookDir);
+
+
     }
 
     void GetNextWaypoints()
     {
-      
+
 
         if (wavepointIndex >= Waypoint.points.Length - 1)
         {
@@ -58,6 +62,9 @@ public class Enemy : MonoBehaviour
 
         wavepointIndex++;
         target = Waypoint.points[wavepointIndex];
+
+
+
     }
 
     void EndPath()

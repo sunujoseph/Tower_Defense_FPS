@@ -16,12 +16,14 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         controlsMenu.SetActive(false);
+        Cursor.visible = true;
     }
 
     public void PlayGame()
     {
         SceneManager.LoadScene("PlayMenu");
         newGame = true;
+        Cursor.visible = true;
     }
 
     public void Tutorial()
@@ -40,6 +42,7 @@ public class MainMenu : MonoBehaviour
     public void MainGame()
     {
         SceneManager.LoadScene("Khang's Version");
+        Cursor.visible = false;
     }
 
     //essentially so that a seperate canvas will pop up on a specific button click -> for cooler UI

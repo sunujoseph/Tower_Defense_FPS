@@ -21,6 +21,9 @@ public class Enemy : MonoBehaviour
 
     Quaternion enemyRotation;
 
+
+    public GameObject deathAnimation; 
+
     private void Start()
     {
         target = Waypoint.points[0];
@@ -81,13 +84,14 @@ public class Enemy : MonoBehaviour
 
         if (health <= 0)
         {
+           
             Die();
         }
     }
 
     void Die()
     {
-
+        Instantiate(deathAnimation, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 

@@ -117,6 +117,7 @@ MonoBehaviour:
   startHealth: 50
   player: {fileID: 8648963337692970504, guid: 125f53a7d86678f458c014c4783a0d8e, type: 3}
   healthBar: {fileID: 5492658477687794464}
+  deathAnimation: {fileID: 5136630812217501500, guid: 97e37f3b447415d419655b4cd1da47e1, type: 3}
 --- !u!1 &2936624508395812670
 GameObject:
   m_ObjectHideFlags: 0

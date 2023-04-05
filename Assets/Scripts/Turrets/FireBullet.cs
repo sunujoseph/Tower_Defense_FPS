@@ -59,12 +59,14 @@ public class FireBullet : MonoBehaviour
         }
         if (hit != true)
         {
-        gameObject.GetComponent<Renderer>().enabled = false;
-        gameObject.GetComponent<Collider>().enabled = false;
-        Instantiate(explosion);
-        Destroy(gameObject, 0.6f);
+            gameObject.GetComponent<Renderer>().enabled = false;
+            gameObject.GetComponent<Collider>().enabled = false;
+            Instantiate(explosion);
+            Destroy(gameObject, 0.6f);
             hit = true;
-    }
+        }
         return;
     }
+       
+    
 }

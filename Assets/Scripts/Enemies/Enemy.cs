@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour
 
     private int wavepointIndex = 0;
 
-    public Image healthBar;
+    public Slider healthBar;
 
     Quaternion enemyRotation;
 
@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour
 
         player = GameObject.FindWithTag("Player");
 
-
+        healthBar.value = startHealth;
     }
     private void Update()
     {
@@ -47,7 +47,7 @@ public class Enemy : MonoBehaviour
         Vector3 lookDir = Waypoint.points[wavepointIndex].position - transform.position ;
          transform.rotation = Quaternion.LookRotation(lookDir);
 
-
+        
     }
 
     void GetNextWaypoints()
@@ -77,6 +77,7 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+        healthBar.value = health/startHealth;
 
         if (health <= 0)
         {

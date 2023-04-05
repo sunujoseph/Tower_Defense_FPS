@@ -19595,8 +19595,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotato: {fileID: 8280432697731550444}
   hit: 0
-  speed: 28
-  damage: 10
+  speed: 30
+  damage: 7
 --- !u!1 &8280432697731550444
 GameObject:
   m_ObjectHideFlags: 0

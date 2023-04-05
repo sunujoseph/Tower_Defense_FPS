@@ -8,6 +8,8 @@ Shader "Custom/OutlineWNormalMap"
 
         _OutlineColor("Outline Color", Color) = (0,0,0,1)
         _Outline("Outline Width", Range(0, 0.07)) = 0.005
+
+        _Color("Color", Color) = (1,1,1,1)
     }
         SubShader
         {
@@ -24,6 +26,7 @@ Shader "Custom/OutlineWNormalMap"
 
         float _Outline;
         float4 _OutlineColor;
+        
 
 
         void vert(inout appdata_full v)
@@ -49,10 +52,11 @@ Shader "Custom/OutlineWNormalMap"
         sampler2D _MainTex;
         sampler2D _BumpTex;
         half _mySlider;
+        float4 _Color;
 
         void surf(Input IN, inout SurfaceOutput o)
         {
-            o.Albedo = tex2D(_MainTex, IN.uv_MainTex);
+            o.Albedo = tex2D(_MainTex, IN.uv_MainTex) * _Color;
             o.Normal = UnpackNormal(tex2D(_BumpTex, IN.uv_BumpTex)); //rgb to xyz
             o.Normal *= float3(_mySlider, _mySlider, 1);
         }

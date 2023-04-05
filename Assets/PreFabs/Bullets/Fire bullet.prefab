@@ -4938,5 +4938,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hit: 0
   explosion: {fileID: 3274658703218555818, guid: 6108eebf5c04e764980294bc31c793fe, type: 3}
-  speed: 30
-  damage: 20
+  speed: 25
+  damage: 25

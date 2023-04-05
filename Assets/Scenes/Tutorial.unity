@@ -1434,6 +1434,7 @@ GameObject:
   - component: {fileID: 254451489}
   - component: {fileID: 254451491}
   - component: {fileID: 254451492}
+  - component: {fileID: 254451493}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1576,6 +1577,24 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &254451493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254451487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b0052515538f3c429172241c756ecf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloomShader: {fileID: 4800000, guid: 095e6a5fba018c3488b9d9b677333bb8, type: 3}
+  debug: 0
+  iterations: 4
+  threshold: 3.58
+  intensity: 1.05
+  blurSize: 0.94
 --- !u!1 &275745231
 GameObject:
   m_ObjectHideFlags: 0
@@ -3628,7 +3647,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 95dad422bace2a14c992d1a97343bd1d, type: 2}
+  - {fileID: 2100000, guid: 48903a69cd246454689e964c47dedbe5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6274,7 +6293,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 0.73170733, b: 0, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -6284,9 +6303,9 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 0.33
+    m_Strength: 0.875
     m_Bias: 0
-    m_NormalBias: 0.4
+    m_NormalBias: 3
     m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
@@ -6308,7 +6327,7 @@ Light:
     m_UseCullingMatrixOverride: 0
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
-  m_Flare: {fileID: 12100000, guid: 57ba8e989e2f7314eb3983980a361f0e, type: 2}
+  m_Flare: {fileID: 12100000, guid: 37bc21ba4601bb548b9f474f1268c323, type: 2}
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2

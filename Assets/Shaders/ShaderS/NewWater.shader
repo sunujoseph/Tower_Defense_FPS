@@ -10,6 +10,10 @@ Shader "Custom/NewWater"
 			  _WaveB("Wave B", Vector) = (0,1,0.25,20)
 			  _WaveC("Wave C", Vector) = (1,1,0.15,10)
 
+			  _FoamTex("Foam", 2D) = "white" {}
+		_ScrollX("Scroll X", Range(-5,5)) = 1
+		_ScrollY("Scroll Y", Range(-5,5)) = 1
+
 		_mySlider("Bump Amount", Range(0,15)) = 1
 	}
 		SubShader{
@@ -23,6 +27,9 @@ Shader "Custom/NewWater"
 			sampler2D _MainTex;
 	   sampler2D _myBump;
 	   half _mySlider;
+	   sampler2D _FoamTex;
+	   float _ScrollX;
+	   float _ScrollY;
 
 			struct Input {
 				float2 uv_MainTex;
@@ -80,11 +87,17 @@ Shader "Custom/NewWater"
 				vertexData.normal = normal;
 			}
 
-			void surf(Input IN, inout SurfaceOutputStandard o) {
+			void surf(Input IN, inout SurfaceOutputStandard o) 
+			{
+
+				_ScrollX *= _Time;
+				_ScrollY *= _Time;
+
 				fixed4 c = tex2D(_MainTex, IN.uv_MainTex) * _Color;
 				o.Normal = UnpackNormal(tex2D(_myBump, IN.uv_myBump)); //rgb to xyz
 				o.Normal *= float3(_mySlider, _mySlider, 1);
-				o.Albedo = c.rgb;
+				 float3 foam = (tex2D(_FoamTex, IN.uv_MainTex + float2(_ScrollX / 2.0, _ScrollY / 2.0)));
+				o.Albedo = c.rgb + foam;
 				o.Metallic = _Metallic;
 				o.Smoothness = _Glossiness;
 				o.Alpha = c.a;

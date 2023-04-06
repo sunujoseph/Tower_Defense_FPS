@@ -15,10 +15,16 @@ public class Turret : MonoBehaviour
     
     [SerializeField] Transform RotatePoint;
 
-    public Transform firepoint; 
+    public Transform firepoint;
+
+    
+    public AudioSource audioSource;
+    public AudioClip audioClip;
+
     void Start()
     {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
+        audioSource = GetComponent<AudioSource>();
 
     }
 
@@ -57,6 +63,7 @@ public class Turret : MonoBehaviour
         if (firecountdown <= 0f)
         {
             Shoot();
+            //PlayShootingSound();
             firecountdown = 1f / fireRate;
         }
         firecountdown -= Time.deltaTime;
@@ -77,6 +84,12 @@ public class Turret : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, range);
+    }
+
+    public void PlayShootingSound()
+    {
+        
+        audioSource.Play();
     }
     
 }

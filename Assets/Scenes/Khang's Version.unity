@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1897663628}
-  m_IndirectSpecularColor: {r: 0.010570444, g: 0.010858833, b: 0.01228333, a: 1}
+  m_IndirectSpecularColor: {r: 0.010570444, g: 0.010858628, b: 0.01228333, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -23974,7 +23974,7 @@ MonoBehaviour:
       count: 30
       rate: 1
   spawnPoint: {fileID: 1802028899}
-  startPeriod: 10
+  startPeriod: 30
   timeBetweenWaves: 30
   waveCountdownText: {fileID: 1273788602}
   gameManager: {fileID: 724044933}

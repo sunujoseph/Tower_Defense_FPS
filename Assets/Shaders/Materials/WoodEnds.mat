@@ -8,13 +8,13 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: WoodEnds
-  m_Shader: {fileID: 4800000, guid: 4763b7a4b04d93e42953fea1fcf40e4f, type: 3}
+  m_Shader: {fileID: 4800000, guid: 90f40bfcc5ed63e40b76c0b7f4c88fa1, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 3000
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -22,6 +22,10 @@ Material:
     m_TexEnvs:
     - _BumpMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpTex:
+        m_Texture: {fileID: 2800000, guid: 73f75197a00a4924286463cf76e140bb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -41,7 +45,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 7e16b43827d188543a5475dbb5475b3c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -76,15 +80,17 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
+    - _Outline: 0.0658
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - _mySlider: 10
+    - _mySlider: 3.95
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 0.68235296, b: 0.46666667, a: 1}
     - _Colour: {r: 1, g: 0.66711587, b: 0.3726415, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 1, g: 0.89411765, b: 0, a: 1}
   m_BuildTextureStacks: []
